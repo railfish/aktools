@@ -30,5 +30,5 @@ jobs:
           push: true
           platforms: linux/amd64
           tags: 
-            ${{ env.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:latest
-            ${{ env.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:${{ github.ref_name }}
+            ${{ DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:latest
+            ${{ DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:${{ github.ref_name }}
