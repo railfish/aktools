@@ -29,6 +29,6 @@ jobs:
         with:
           push: true
           platforms: linux/amd64
-          tags: 
+          tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:latest
             ${{ secrets.DOCKERHUB_USERNAME }}/${{ github.event.repository.name }}:${{ github.ref_name }}
